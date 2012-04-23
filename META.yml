@@ -1,0 +1,27 @@
+--- #YAML:1.0
+name:               Text-CleanFragment
+version:            0.01
+abstract:           clean up text to use as URL fragment or filename
+author:
+    - Max Maischein <corion@cpan.org>
+license:            perl
+distribution_type:  module
+configure_requires:
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:
+    Carp:             0
+    Exporter:         5
+    perl:             5.006
+    Text::Unidecode:  0
+resources:
+    repository:  http://github.com/Corion/text-cleanfragment
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.50
+meta-spec:
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4
