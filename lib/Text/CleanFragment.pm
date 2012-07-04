@@ -4,10 +4,12 @@ use vars qw($VERSION @EXPORT);
 use Exporter qw'import';
 use Text::Unidecode;
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 @EXPORT = (qw(clean_fragment));
 
 =head1 NAME
+
+=encoding utf8
 
 Text::CleanFragment - clean up text to use as URL fragment or filename
 
@@ -35,7 +37,7 @@ or problematic.
 
 =head1 FUNCTIONS
 
-=head2 C<< clean_fragment @fragments >>
+=head2 C<< clean_fragment( @fragments ) >>
 
     my $url_title = join("_", clean_fragment("Ümloud vs. ß",'by',"Grégory"));
     # Umloud_vs._ss_by_Gregory
